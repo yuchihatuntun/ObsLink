@@ -3,7 +3,7 @@ title: Formatting Reference
 date: 2025-09-07
 description: Explore all the markdown, extended markdown, and other embed features available in this blog theme.
 tags:
-  - markdown
+  - MCP
   - formatting
   - tutorial
   - reference
@@ -17,7 +17,7 @@ hideTOC: false
 targetKeyword:
 draft: false
 ---
-This post demonstrates all the markdown, extended markdown, and other embed features available in Astro Modular. Use this as both a reference guide and a showcase of what's possible.
+
 
 ## Basic Formatting
 

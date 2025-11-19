@@ -17,4 +17,9 @@ draft: false
 
 The document is primarily intended to assist you in using this GitHub repository:
 
-[![GitHub Repo](https://github.com/yuchihatuntun/SYSU-MST-MCU_PrincipleExperiment)](https://github.com/yuchihatuntun/SYSU-MST-MCU_PrincipleExperiment)
+<iframe
+  src="https://github-readme-stats.vercel.app/api/pin/?username=yuchihatuntun&repo=Tangjia-Bites"
+  frameborder="0"
+  width="400px"
+  height="150px"
+></iframe>

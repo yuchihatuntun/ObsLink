@@ -17,5 +17,4 @@ draft: false
 
 The document is primarily intended to assist you in using this GitHub repository:
 
-::github{repo="yuchihatuntun/Inkwell"}
-
+[![GitHub Repo](https://github.com/yuchihatuntun/SYSU-MST-MCU_PrincipleExperiment)](https://github.com/yuchihatuntun/SYSU-MST-MCU_PrincipleExperiment)

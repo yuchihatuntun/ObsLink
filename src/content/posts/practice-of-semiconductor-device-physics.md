@@ -8,11 +8,11 @@ tags:
   - Exercise-Book
 image: "[[attachments/cover-05.png]]"
 imageAlt: Darkness Devil
-imageOG: false
+imageOG: true
 hideCoverImage: false
 hideTOC: false
 targetKeyword: ""
-draft: true
+draft: false
 aliases:
   - 未命名
 ---

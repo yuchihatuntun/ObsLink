@@ -12,7 +12,7 @@ imageOG: true
 hideCoverImage: false
 hideTOC: false
 targetKeyword: ""
-draft: false
+draft: true
 aliases:
   - 未命名
 ---

@@ -14,7 +14,6 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 aliases:
-  - 未命名
 ---
 ### 静态逻辑
 #### 静态互补 CMOS 反相器

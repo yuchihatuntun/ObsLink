@@ -8,7 +8,7 @@ tags:
   - Notebook
 image: "[[attachments/cover-06.png]]"
 imageAlt: Young Girls and Integrated Circuits
-imageOG: false
+imageOG: true
 hideCoverImage: false
 hideTOC: false
 targetKeyword: ""

@@ -1,7 +1,7 @@
 ---
 title: VLSI-Lecture-07
 date: 2025-11-21
-description: Combinational logic, covering static logic (including static complementary CMOS inverters, ratioed logic, and pass-transistor logic) and dynamic logic (including principles, domino logic, etc., as well as signal integrity issues)
+description: Combinational logic, covering static logic (including static complementary CMOS inverters, ratioed logic, and pass-transistor logic) and dynamic logic
 tags:
   - 2025-autumn
   - VLSI
@@ -11,8 +11,8 @@ imageAlt: Young Girls and Integrated Circuits
 imageOG: true
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
-draft: true
+targetKeyword: vlsi combined logic circuit
+draft: false
 ---
 # 静态逻辑
 ## 静态互补 CMOS 反相器
@@ -39,6 +39,21 @@ $$ k_n' V_{DSATn} \left( V_M - V_{Tn} - \frac{V_{DSATn}}{2} \right) + k_p' V_{DS
 	- **预充电管导通**：PMOS预充电管（$M_p$）在栅极低电平作用下导通，建立了电源 $V_{DD}$ 到输出节点 $Out$ 的低阻抗路径（无论输入逻辑状态如何，输出节点 $Out$ 均被无条件充电至高电平 $V_{DD}$）。
 	    
 	- **求值管关断**：NMOS求值管（$M_e$）在栅极低电平作用下截止（Cut-off），切断了下拉网络（PDN）与地（GND）之间的物理连接（电源 $V_{DD}$ 与地之间也不存在直流通路。因此，该机制消除了在预充电期间可能发生的任何静态功耗）。
+2. **求值阶段**（时钟信号 $CLK = 1$）
+
+	- **预充电管关断**：PMOS预充电管（$M_p$）截止，断开了输出节点与电源 $V_{DD}$ 的连接。
+	    
+	- **求值管导通**：NMOS求值管（$M_e$）导通，将下拉网络（PDN）的底部接入地（GND）。此时，电路的输出状态完全取决于下拉逻辑网络（PDN）的导通情况。
+
+3. **有条件放电（求值阶段）**
+
+- 情形一：输入逻辑使得PDN导通
+    
+    如果在输入信号作用下，下拉网络形成导通路径，则输出节点 $Out$ 通过PDN和导通的求值管 $M_e$ 形成到地的低阻抗通路。存储在输出节点的电荷被泄放，输出电压降至逻辑“0”（GND）。
+    
+- 情形二：输入逻辑使得PDN关断
+    
+    如果下拉网络未形成通路，输出节点无法放电。此时，预充电的高电平值（$V_{DD}$）被维持在负载电容 $C_L$ 上。
 
 ## 串联动态门
 

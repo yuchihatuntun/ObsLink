@@ -1,6 +1,6 @@
 {
   "showInlineTitle": false,
-  "promptDelete": true,
+  "promptDelete": false,
   "showIndentGuide": false,
   "attachmentFolderPath": "./attachments",
   "userIgnoreFilters": [
@@ -39,5 +39,11 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "posts",
   "newLinkFormat": "relative",
-  "mobileQuickRibbonItem": ""
+  "mobileQuickRibbonItem": "",
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

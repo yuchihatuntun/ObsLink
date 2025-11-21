@@ -95,6 +95,7 @@
   "hideAddPropertyButton": true,
   "deemphasizeProperties": false,
   "autoHideVaultSwitcher": true,
+  "autoHideVaultSwitcherBgTransparency": 0.9,
   "hideHelpButton": true,
   "autoHideSettingsButton": false,
   "collapseFileExplorerButtons": false,
@@ -131,6 +132,11 @@
   "orderNavbarButton6": "order-navbar-button-nth-child-6-6",
   "animationPersonality": "default",
   "animationSpeed": 1,
+  "helpButtonReplacement": {
+    "enabled": false,
+    "commandId": "oxygen-settings:open-settings",
+    "iconId": "settings-2"
+  },
   "zenMode": false,
   "zenModeFullscreen": false,
   "zenModeLeftSidebar": true,

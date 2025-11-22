@@ -243,5 +243,11 @@
   },
   "availableThemes": "default",
   "customThemes": "",
-  "customThemeGenerationEnabled": false
+  "customThemeGenerationEnabled": false,
+  "helpButtonReplacement": {
+    "enabled": true,
+    "commandId": "astro-modular-settings:open-settings",
+    "iconId": "wrench"
+  },
+  "removeRibbonIcon": false
 }

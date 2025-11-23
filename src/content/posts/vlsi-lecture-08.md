@@ -356,8 +356,6 @@ $$
 我们研究的是 **寄存器1（FF1） -> 组合逻辑电路 -> 寄存器2（FF2）**：
 
 ![](attachments/Reg-Comb-Reg-Circuit.png)
-*研究电路图*
-
 ![](attachments/最高时钟频率约束.png)
 *最高时钟频率约束*
 

@@ -1,6 +1,6 @@
 ---
 title: VLSI-Lecture-Review
-date: 2025-11-23
+date: 2025-12-10
 description: ""
 tags: []
 image: "[[attachments/cover-12.png]]"
@@ -11,7 +11,6 @@ hideTOC: false
 targetKeyword: ""
 draft: true
 aliases:
-  - 未命名
 ---
 [VLSI-Lecture-06](posts/vlsi-lecture-06.md)
 

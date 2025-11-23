@@ -1,15 +1,21 @@
 ---
 title: VLSI-Lecture-09
-date: 2025-11-22
-description: ""
-tags: []
+date: 2025-11-03
+description: 
+tags:
+  - 2025-autumn
+  - VLSI
+  - Notebook
 image: "[[attachments/cover-08.png]]"
-imageAlt: ""
-imageOG: false
+imageAlt: Unknown Anime Character
+imageOG: true
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
-draft: true
-aliases:
-  - 未命名
+targetKeyword: vlsi adder data path
+draft: false
 ---
+# 数据通路
+
+
+# 加法器设计
+

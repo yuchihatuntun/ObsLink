@@ -11,7 +11,7 @@ imageAlt: Reze(Chainsaw Man)
 imageOG: true
 hideCoverImage: false
 hideTOC: false
-targetKeyword: vlsi combined logic circuit
+targetKeyword: vlsi sequential logic circuit
 draft: false
 ---
 # 时序逻辑基础

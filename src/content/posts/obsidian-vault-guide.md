@@ -8,10 +8,10 @@ tags:
   - configuration
   - astro
   - obsidian
-image: "[[attachments/astro-composer-suite-for-obsidian.png]]"
+image: "[[attachments/cover-13.png]]"
 imageAlt: Astro and Obsidian logos stacked vertically with a "+" (plus) sign between them.
 imageOG: true
-hideCoverImage: true
+hideCoverImage: false
 hideTOC: false
 targetKeyword: astro suite obsidian vault
 draft: false

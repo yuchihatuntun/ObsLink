@@ -40,6 +40,9 @@ views:
     filters:
       and:
         - file.folder.startsWith("posts")
+    groupBy:
+      property: file.folder
+      direction: ASC
     order:
       - title
       - formula.Slug

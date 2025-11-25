@@ -7,14 +7,12 @@ tags:
   - MCP
   - Notebook
 image: "[[attachments/cover-16.png]]"
-imageAlt: ""
+imageAlt: 
 imageOG: true
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
-draft: true
-aliases:
-  - Microcomputer Bus Technology
+targetKeyword: 
+draft: false
 ---
 # 总线概述
 

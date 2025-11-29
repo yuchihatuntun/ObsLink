@@ -1,7 +1,7 @@
 ---
 title: VLSI-Lecture-06
 date: 2025-10-12
-description:
+description: VLSI Internal Interconnect Line Models and Analysis
 tags:
   - 2025-autumn
   - VLSI
@@ -11,7 +11,7 @@ imageAlt: Torii gates scattered across the lake
 imageOG: true
 hideCoverImage: false
 hideTOC: false
-targetKeyword: vlsi combined logic circuit
+targetKeyword: vlsi interconnect line model
 draft: false
 ---
 # 互联线模型

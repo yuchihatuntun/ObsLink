@@ -245,9 +245,58 @@ $$
 $$
 最终得到50%翻转延时：
 $$
-t_{p} = \textcolor{blue}{0.69 R_{s} \cdot cL} + \textcolor{red}{0.38 r c L^{2}}
+t_{p} = \underbrace{\textcolor{blue}{0.69 R_{s} \cdot cL}}_{\text{逻辑门延时}} + \underbrace{\textcolor{red}{0.38 r c L^{2}}}_{\text{互连线延时}}
 $$
 ## 传输线模型
+
+![](attachments/传输线模型.png)
+*传输线模型*
+
+传输线模型是==考虑电感作用==的分布模型，在此模型下，信号不再是电势的建立过程，而是以==电磁波==的形式在介质中传播。
+
+**条件**：**$t_r / t_f$ 可与信号波形“飞跃”导线的时间（$L/v$）相比拟**。（信号变化极快，快到在信号还没传到导线终点时，源端电压已经发生了显著变化，此时导线上不同位置的电压不再相等，必须考虑波动效应）
+
+### 波动方程
+
+![](attachments/传输线单元.png)
+*传输线单元*
+
+**电压变化率：** 
+$$
+\frac{\partial v}{\partial x} = -ri - l\frac{\partial i}{\partial t}
+$$
+电压沿导线空间（$x$）的下降，是由电阻上的压降（$ri$）和电感上的感应电动势（$l \cdot di/dt$）共同引起的。
+        
+**电流变化率：
+$$
+\frac{\partial i}{\partial x} = -gv - c\frac{\partial v}{\partial t}
+$$
+
+电流沿导线空间（$x$）的减少（分流），是由介质电导漏电流（$gv$）和电容位移电流（$c \cdot dv/dt$）共同引起的。
+
+为了求解，通常假设介质绝缘良好，即忽略漏电导，令 $g=0$，将上述两个一阶方程联立消元，得到关于电压 $v$ 的二阶偏微分方程：
+$$
+\frac{\partial^2 v}{\partial x^2} = rc \frac{\partial i}{\partial t} + lc \frac{\partial^2 v}{\partial t^2}
+$$
+
+### 无损传输线
+
+- **忽略电阻：** $r=0$（导线是理想导体）。
+    
+- **忽略电导：** $g=0$（介质是理想绝缘体）。
+$$
+\frac{\partial^2 v}{\partial x^2} = lc \frac{\partial^2 v}{\partial t^2} = \frac{1}{v^2} \frac{\partial^2 v}{\partial t^2}
+$$
+电磁波在传输线上的传播速度仅由介质的电磁参数（介电常数 $\varepsilon$ 和磁导率 $\mu$）决定，**是一个常数**。与导线的几何尺寸无关。
+$$
+v = \frac{1}{\sqrt{lc}} = \frac{1}{\sqrt{\varepsilon \mu}}
+$$
+通过单位导线长度的传播延时：
+$$
+t_{wave} = 1/v = \sqrt{lc}
+$$
+### 特征阻抗（$Z_0$）
+
 
 
 ## 导线延时优化

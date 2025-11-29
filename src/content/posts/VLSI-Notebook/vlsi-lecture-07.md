@@ -273,4 +273,8 @@ $$I_{Leak} = (I_{N\_sub} + I_{N\_diode}) - (I_{P\_sub} + I_{P\_diode})$$
 
 ![](attachments/voltage-keeper-PMOS.png)
 
+### 电荷共享
+
+
+
 # 电路选择指南

@@ -39,6 +39,20 @@ $$ V_M = \frac{\left( V_{Tn} + \frac{V_{DSATn}}{2} \right) + \left( V_{DD} + V_{
 ![](attachments/电源电压对VTC曲线的影响.png)
 *电源电压对 VTC 曲线的影响*
 
+>[!note] Homework 4-1 (2)
+>
+>写出如图电路的逻辑布尔表达式
+>
+>![](attachments/vlsi_homework_4-1-2.png)
+
+根据电路图列式子即可：
+$$
+\begin{aligned}
+S &= \overline{A}BC + A\overline{B}C + AB\overline{C} + ABC \\
+  &= (\overline{A}\overline{B} + AB)C + (\overline{A}B + A\overline{B})\overline{C} \\
+  &= A \oplus B \oplus C
+\end{aligned}
+$$
 ## 有比逻辑
 
 ### 概述
@@ -315,7 +329,16 @@ CPL同时处理原信号（如 $A, B$）和反相信号（$\bar{A}, \bar{B}$）�
 
 **通常 $W_p = W_n$**：通常设计两者尺寸相同。虽然PMOS迁移率低，但由于两者是并联工作且主要目的是全摆幅而非极致驱动，相同尺寸能平衡版图复杂度和电容。
 
+>[!note] Homework 4-1（1）
+>
+>写出如图电路对应的输出布尔表达式
+>
+> ![](attachments/vlsi_himework_4-1.png)
+> 
 
+**解：**
+
+根据 $k3k2k1k0$ 的值，可以得到逻辑是：$F=AB + \overline{A}B=B$
 
 # 动态逻辑
 
@@ -405,6 +428,12 @@ $$Out = \overline{CLK} + \overline{(A \cdot B + C)} \cdot CLK$$
 仅能实现非反相逻辑（毕竟连了一个反相器），加反相器把下一级的初始状态（预充电后的状态）从**默认常开**变成了**默认常关**，确保了信号像多米诺骨牌一样，必须前一张倒下（变1），才能撞倒后一张。
 
 ![](attachments/多米诺电路级联.png)
+>[!note] Homework 4-4
+> 请说明为了优化延时应该如何设计多米诺逻辑中反相器的尺寸？
+
+核心思想就是：**轻预充，重求值**。
+
+
 #### np-CMOS多米诺
 
 ![](attachments/np-CMOS多米诺.png)
@@ -451,6 +480,11 @@ MODL的做法是将逻辑电路“==堆叠==”起来。利用同一棵下拉逻
 #### 组合多米诺
 
 ![](attachments/combined-domino-circuit.png)
+
+>[!note] Homework 4-3
+> 请分析动态逻辑门串联的影响？应该如何避免？
+
+见笔记内容即可。
 
 ## 动态逻辑的速度和功耗
 

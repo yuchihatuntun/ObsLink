@@ -216,13 +216,36 @@
       "key": "M"
     }
   ],
+  "file-explorer:open": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "F"
+    }
+  ],
   "outline:open": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Ctrl"
       ],
-      "key": "E"
+      "key": "O"
+    }
+  ],
+  "global-search:open": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "S"
+    }
+  ],
+  "workspace:close": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "W"
     }
   ]
 }

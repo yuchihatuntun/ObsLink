@@ -450,7 +450,7 @@ $$
 
  和增强型  BJT 原理相同，在控制电压为 0时，已经关断了沟道，需要施加正向栅压来打开沟道。
 
-## JFET 的器件特性
+## pnFET 器件特性
 
 ![](attachments/单双边器件统一分析.png)
 
@@ -618,12 +618,46 @@ I_{D1(sat)} = I_{P1} \left[ 1 - 3 \frac{(V_{bi} - V_{GS})}{V_{p0}} \left( 1 - \f
 $$
 #### 经验公式
 
-理论公式（含有 $3/2$ 次方项）过于复杂，不便于电路设计和手算估算，工业界常采用一个简化的二次函数来拟合：
+理论公式（含有 $3/2$ 次方项）过于复杂，不便于电路设计和手算估算，工业界常采用一个简化的二次函数来拟合饱和漏电流：
 
 $$
-I_D = I_{DSS} \left( 1 - \frac{V_{GS}}{V_P} \right)^2
+I_{Dsat} = I_{DSS} \left( 1 - \frac{V_{GS}}{V_P} \right)^2
 $$
 ![](attachments/平方经验公式误差分析.png)
 ### 跨导
 
+跨导 $g_m$ 描述了==栅源电压 $V_{GS}$ 对漏极电流 $I_D$ 的控制能力==：
+
+$$
+g_m = \frac{\partial I_D}{\partial V_{GS}} \Bigg|_{V_{DS} = \text{const}}
+$$
+对通用电流方程关于 $V_{GS}$ 求偏导，得到中间公式：
+$$
+g_{mL} = \frac{3I_{P1}}{V_{p0}} \sqrt{\frac{V_{bi} - V_{GS}}{V_{p0}}} \left( \sqrt{\frac{V_{DS}}{V_{bi} - V_{GS}} + 1} - 1 \right)
+$$
+使用泰勒展开化简：
+$$
+g_{mL} \approx \frac{G_{01}}{2} \frac{V_{DS}}{\sqrt{V_{p0}(V_{bi} - V_{GS})}}
+$$
+在线性区，跨导 $g_{mL}$ 与漏源电压 $V_{DS}$ 成正比。这意味着在线性区，$V_{DS}$ 越小，栅极对电流的控制能力越弱。
+
+对饱和电流方程 $I_{D1(sat)}$ 关于 $V_{GS}$ 求导，得到：
+
+$$
+g_{ms} = \frac{\partial I_{D1(sat)}}{\partial V_{GS}} = G_{01} \left( 1 - \sqrt{\frac{V_{bi} - V_{GS}}{V_{p0}}} \right)
+$$
+使用工业平方律电流公式进行化简：
+
+$$
+g_{ms} = - \frac{2I_{DSS}}{V_P} \left( 1 - \frac{V_{GS}}{V_P} \right)
+$$
+对于 N 沟道 JFET，$V_P$ 是负值，因此系数 $- \frac{2I_{DSS}}{V_P}$ 是==正值==，保证了跨导 $g_{ms}$ 为**正值**（即 $V_{GS}$ 增加，电流 $I_D$ 增加）。
+
+
+## MESFET 器件特性
+
+
+
 ## 非理想因素
+
+### 沟道长度调制效应

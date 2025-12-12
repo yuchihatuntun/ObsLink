@@ -6,7 +6,7 @@ tags:
   - 2025-autumn
   - Semiconductor-Device-Physics
   - Notebook
-image: "[[../attachments/cover-25.png]]"
+image: "[[attachments/cover-25.png]]"
 imageAlt: Reze, the good girl.
 imageOG: true
 hideCoverImage: false

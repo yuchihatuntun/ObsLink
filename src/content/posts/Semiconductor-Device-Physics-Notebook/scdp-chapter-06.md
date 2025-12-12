@@ -1,17 +1,19 @@
 ---
 title: ScDP-Chapter-06
 date: 2025-12-02
-description: ""
-tags: []
-image: ""
-imageAlt: ""
-imageOG: false
+description: Course content on Junction Transistor + Metal-Semiconductor Contact
+tags:
+  - 2025-autumn
+  - Semiconductor-Device-Physics
+  - Notebook
+image: "[[../attachments/cover-25.png]]"
+imageAlt: Reze, the good girl.
+imageOG: true
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
+targetKeyword:
 draft: false
 aliases:
-  - 未命名
 ---
 # 金半接触（对应教材第九章）
 

@@ -6,7 +6,7 @@ tags:
   - MCP
   - Notebook
   - 2025-autumn
-image: "[[attachments/MCP-CH06-cover.png]]"
+image: "[[../attachments/cover-001.png]]"
 imageAlt: Aki Hayakawa and the corridor
 imageOG: true
 hideCoverImage: false

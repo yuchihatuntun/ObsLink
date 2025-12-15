@@ -1,15 +1,16 @@
 ---
 title: MCP-Chapter-08
 date: 2025-12-15
-description: Common Interface Technologies
-tags: []
-image: ""
+description: Studying Several Common Interface Chips with Richer Functions and Stronger Performance
+tags:
+  - 2025-autumn
+  - MCP
+  - Notebook
+image: "[[../attachments/cover-088.png]]"
 imageAlt: ""
-imageOG: false
+imageOG: true
 hideCoverImage: false
 hideTOC: false
 targetKeyword: ""
 draft: true
-aliases:
-  - 未命名
 ---

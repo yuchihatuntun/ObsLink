@@ -29,7 +29,7 @@ aliases:
 
 (a)
 
-![](attachments/BJT-零偏-热平衡能带图.png)
+![](../../attachments/BJT-零偏-热平衡能带图.png)
 *BJT零偏热平衡能带图*
 
 (b)
@@ -270,7 +270,7 @@ $I_E = (1 + \beta) I_B = (151)(0.065) = 9.815\ \mu\text{A}$
 >
 >(c) 在图上标出 $i_{B}=0.05 \text{ mA}$ 时对应的 $i_{C}$，$v_{CE}$ 的值。
 
-![](attachments/ScDP-exercise-ch05-12-07.png)
+![](../../attachments/ScDP-exercise-ch05-12-07.png)
 
 >**12.8** 
 >如图 12.8 所示，假设 $V_{CC}=3 \text{ V}$，$V_{BE}=0.65 \text{ V}$。
@@ -319,7 +319,7 @@ $$
 
 (b) ==正向有源模式==的边界条件求解
 
-![](attachments/BJT内部坐标结构.png)
+![](../../attachments/BJT内部坐标结构.png)
 
 基极区 $x = 0$ 处的少子电子浓度：
 
@@ -409,7 +409,7 @@ n_{E}(0) = 9.24 \times 10^{12} \text{ cm}^{-3}
 $$
 (c)
 
-![](attachments/pnp-正向有源区-少子分布图.png)
+![](../../attachments/pnp-正向有源区-少子分布图.png)
 
 >**12.11** 
 >$T = 300K$时，一个均匀掺杂的pnp硅双极晶体管工作于正向有源区，$V_{CB} = 2.5V$，基区宽度$x_{B0} = 1.0\mu m$，掺杂浓度为$N_{E} = 8\times10^{17}cm^{-3}$，$N_{B} = 2\times10^{16}cm^{-3}$，$N_{C} = 10^{15}cm^{-3}$。

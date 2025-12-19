@@ -1,17 +1,18 @@
 ---
 title: VLSI-Lecture-11
 date: 2025-11-28
-description: ""
-tags: []
-image: ""
-imageAlt: ""
-imageOG: false
+description: Digital Integrated Circuits - Memory Design
+tags:
+  - 2025-autumn
+  - VLSI
+  - Notebook
+image: "[[../attachments/cover-1219.png]]"
+imageAlt: Chisa (Wuthering Waves)
+imageOG: true
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
-draft: true
-aliases:
-  - 未命名
+targetKeyword: vlsi combined logic circuit
+draft: false
 ---
 # 存储器分类
 
@@ -197,6 +198,18 @@ flowchart LR
 >
 >有源区定义了晶体管的沟道区域，引线孔定义了连接关系。改变这两层就能物理上“生成”或“消除”一个晶体管，从而改变数据。
 
+### 预充电结构或非存储阵列
+
+![](attachments/预充电结构或非存储阵列.png)
+*预充电结构或非存储阵列*
+
+相比于伪NMOS结构，这里的负载管（PMOS）不再恒定接地导通，而是其栅极接了一个**时钟信号 $\phi$**。此时，负载管被称为**预充管**。
+
+和动态逻辑类似，电路的工作分为两个时钟相位：
+
+- **预充电阶段（$\phi$ 低电平）**：预充管导通，位线被充电至高电平（$V_{CC}$），即逻辑“1”。此时存储管不工作。
+    
+- **求值/读操作阶段（$\phi$ 高电平）**：预充管截止（关断）。如果被选中的存储管导通（存“0”），位线电荷被放掉，输出变为“0”；如果存储管截止（存“1”），位线电荷维持，输出保持“1”。
 
 ## EPROM（紫外线可擦除可编程 ROM）
 

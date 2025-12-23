@@ -7,7 +7,7 @@ tags:
   - MCP
   - Notebook
 image: "[[attachments/cover-033.png]]"
-imageAlt: ""
+imageAlt: JIRE（chainsaw man）
 imageOG: true
 hideCoverImage: false
 hideTOC: false

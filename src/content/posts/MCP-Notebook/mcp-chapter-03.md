@@ -1,13 +1,13 @@
 ---
 title: MCP-Chapter-03
-date: 2025-10-15
+date: 2025-12-23
 description: Studying Several Common Interface Chips with Richer Functions and Stronger Performance
 tags:
   - 2025-autumn
   - MCP
   - Notebook
 image: "[[attachments/cover-033.png]]"
-imageAlt: JIRE（chainsaw man）
+imageAlt:
 imageOG: true
 hideCoverImage: false
 hideTOC: false

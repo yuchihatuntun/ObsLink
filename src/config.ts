@@ -314,7 +314,7 @@ export const siteConfig: SiteConfig = {
       { title: "Projects", url: "/projects" },
       { title: "Docs", url: "/docs" },
       { title: "About", url: "/about" },
-      { title: "GitHub", url: "https://github.com/yuchihatuntun/Obslink" },
+      { title: "GitHub", url: "https://github.com/yuchihatuntun/Obslink" }
     ],
     // [CONFIG:NAVIGATION_SOCIAL]
     social: [

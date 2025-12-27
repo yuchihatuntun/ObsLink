@@ -157,7 +157,6 @@
   },
   "features": {
     "commandPalette": true,
-    "tableOfContents": true,
     "readingTime": true,
     "linkedMentions": true,
     "linkedMentionsCompact": false,
@@ -244,10 +243,10 @@
   "availableThemes": "default",
   "customThemes": "",
   "customThemeGenerationEnabled": false,
+  "removeRibbonIcon": false,
   "helpButtonReplacement": {
     "enabled": true,
     "commandId": "astro-modular-settings:open-settings",
     "iconId": "wrench"
-  },
-  "removeRibbonIcon": false
+  }
 }

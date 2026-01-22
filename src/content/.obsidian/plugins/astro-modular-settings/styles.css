@@ -653,12 +653,22 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 }
 
 /* Settings Tab Styles - Minimal and Clean */
+/* Override parent padding to get full width, then apply padding to children */
+.vertical-tab-content:has(.astro-modular-settings),
+.vertical-tab-container:has(.astro-modular-settings) {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
 .astro-modular-settings {
 	font-family: var(--font-family);
 	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 /* Vertical Tab Content (Shell Commands style) - SCOPED to this plugin only */
@@ -677,17 +687,24 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 }
 
 .astro-modular-settings .tab-nav {
+	position: sticky;
+	top: 0;
+	z-index: 0;
 	display: flex;
 	border-bottom: 1px solid var(--background-modifier-border);
 	margin: 0;
-	padding: 0;
+	padding: var(--size-4-8) var(--size-4-12) 0 var(--size-4-12);
 	gap: 0;
-	background: var(--background-primary);
 	overflow-x: auto;
 	overflow-y: hidden;
 	scrollbar-width: thin;
 	scrollbar-color: var(--background-modifier-border) transparent;
 	-webkit-overflow-scrolling: touch;
+	pointer-events: none;
+}
+
+.astro-modular-settings .tab-nav .tab-button {
+	pointer-events: auto;
 }
 
 .astro-modular-settings .tab-nav::-webkit-scrollbar {
@@ -737,10 +754,11 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 
 .astro-modular-settings .tab-content {
 	flex: 1;
-	padding: 20px;
+	padding: var(--size-4-12) var(--size-4-12) var(--size-4-16) var(--size-4-12);
 	margin: 0;
 	overflow-y: auto;
 	min-height: 0;
+	height: 100%;
 }
 
 .astro-modular-settings .tab-content-container {
@@ -764,8 +782,9 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 }
 
 /* Fix indentation for heading settings - remove padding/margin */
-/* Obsidian uses .setting-item-heading class for headings created with setHeading() */
-.astro-modular-settings .setting-item-heading {
+/* Only apply to headings within .settings-section (Navigation pages and Social links) */
+/* This excludes headings created by createSettingsGroup in other tabs */
+.astro-modular-settings .settings-section .setting-item-heading {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
 	padding-left: 0 !important;
@@ -773,13 +792,13 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 	border: none !important;
 }
 
-.astro-modular-settings .setting-item-heading .setting-item-name {
+.astro-modular-settings .settings-section .setting-item-heading .setting-item-name {
 	margin: 0 !important;
 	padding: 0 !important;
 	font-weight: var(--font-medium);
 }
 
-.astro-modular-settings .setting-item-heading .setting-item-info {
+.astro-modular-settings .settings-section .setting-item-heading .setting-item-info {
 	margin: 0 !important;
 	padding: 0 !important;
 }
@@ -1828,6 +1847,17 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 	.simple-color-input label {
 		min-width: auto;
 	}
+}
+
+/* Group settings compatibility styling for older Obsidian builds (< 1.11.0) */
+/* Scoped to only this plugin's settings container to avoid affecting other plugins */
+.astro-modular-settings-settings-compat .setting-group-heading h3 {
+	margin: 0 0 0.75rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border-bottom: none !important;
 }
 
 /* Fix checkbox checkmark centering - SCOPED to plugin UI only */

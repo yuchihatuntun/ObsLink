@@ -14,3 +14,8 @@ draft: false
 aliases:
   - 2025 final summary
 ---
+# Physics of Semiconductor Physics
+
+
+# MCP
+简答题（40%），计算题（20%），编程题（20%），综合题（20%，画图，设计，读图等）

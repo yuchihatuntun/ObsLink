@@ -4,7 +4,7 @@ date: 2026-02-18
 description: Make overall arrangements and preparations for the year-end postgraduate entrance examination.
 tags:
   - Postgrad-Exam
-image: "[[attachments/cover_2026_01.jpg]]"
+image: "[[attachments/cover-2026-01.jpg]]"
 imageAlt: Everyone in Wuling gathers together for the New Year's Eve dinner.
 imageOG: true
 hideCoverImage: false

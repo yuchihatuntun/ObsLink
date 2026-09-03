@@ -247,5 +247,13 @@
       ],
       "key": "W"
     }
+  ],
+  "colored-text:color-text": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "A"
+    }
   ]
 }
